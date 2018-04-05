@@ -1,0 +1,1 @@
+This is an app helping users to look for nearby tickets according to the type of event or the name of performer that they are interested in by melding the date from Ticketmaster.com.
