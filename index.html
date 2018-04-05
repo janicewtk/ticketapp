@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ticket Search</title>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+      <main role="main" aria-live="assertive">
+        <h1>Search Ticket on Tickermaster</h1>
+          <form action="#" class="js-search-form">
+            <label for="query"></label>
+            <select name="State">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticuts</option>
+            <option value="DE">Delaware</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            </select>
+            <input type="text" class="js-query">
+            <button type="submit">Search</button>
+          </form>
+          
+          <h2>Results</h2>
+          <div class="js-search-results">
+            
+          </div>
+      </main>
+      
+      <div class="modal">
+        <div class="modal-title"></div>
+        <img src="" class="modal-image"/><br>
+     <a target="_blank" href="https://www.youtube.com/watch?v=" class="modal-link">Go to Video</a><br>
+        <a target="_blank" href="https://www.youtube.com/channel/" class="modal-channel">Go to Channel</a><br>
+        <button class="modal-nextButton">More Videos
+            </button>
+      </div>
+      <div class="overlay"></div>
+      
+      <script src="index.js"></script>
+    </body>
+</html>
