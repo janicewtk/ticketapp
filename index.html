@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ticket Search</title>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One|Pontano+Sans|Righteous|Ubuntu" rel="stylesheet">
+    </head>
+    <body>
+      <main role="main" aria-live="assertive">
+        <img src="https://digbr.com/wp-content/uploads/2015/05/concert.jpg" class="background-img">
+
+        <h1 id="h1">SEARCH TICKETS FOR YOUR MUSIC EVENTS</h1>
+
+          <form class="js-search-form">
+
+            <fieldset class="js-location-search">
+              <legend>Location</legend>
+              <select name="State" id="State" class="js-state"> 
+                <option label="Alabama" value="AL" selected="selected" required>Alabama</option>
+                <option label="Alaska" value="AK" required>Alaska</option>
+                <option label="Arizona" value="AZ" required>Arizona</option>
+                <option label="Arkansas" value="AR" required>Arkansas</option>
+                <option label="California" value="CA" required>California</option>
+                <option label="Colorado" value="CO" required>Colorado</option>
+                <option label="Connecticuts" value="CT" required>Connecticuts</option>
+                <option label="Delaware" value="DE" required>Delaware</option>
+                <option label="Florida" value="FL" required>Florida</option>
+                <option label="Georgia" value="GA" required>Georgia</option>
+                <option label="Hawaii" value="HI" required>Hawaii</option>
+                <option label="Idaho" value="ID" required>Idaho</option>
+                <option label="Illinois" value="IL" required>Illinois</option>
+                <option label="Indiana" value="IN" required>Indiana</option>
+                <option label="Iowa" value="IA" required>Iowa</option>
+                <option label="Kansas" value="KS" required>Kansas</option>
+                <option label="Kentucky" value="KY" required>Kentucky</option>
+                <option label="Louisiana" value="LA" required>Louisiana</option>
+                <option label="Maine" value="ME" required>Maine</option>
+                <option label="Maryland" value="MD" required>Maryland</option>
+                <option label="Massachusetts" value="MA" required>Massachusetts</option>
+                <option label="Michigan" value="MI" required>Michigan</option>
+                <option label="Minnesota" value="MN" required>Minnesota</option>
+                <option label="Mississippi" value="MS" required>Mississippi</option>
+                <option label="Missouri" value="MO" required>Missouri</option>
+                <option label="Montana" value="MT" required>Montana</option>
+                <option label="Nebraska" value="NE" required>Nebraska</option>
+                <option label="Nevada" value="NV" required>Nevada</option>
+                <option label="New-Hampshire" value="NH" required>New Hampshire</option>
+                <option label="New-Jersey" value="NJ" required>New Jersey</option>
+                <option label="New-Mexico" value="NM" required>New Mexico</option>
+                <option label="New-York" value="NY" required>New York</option>
+                <option label="North-Carolina" value="NC" required>North Carolina</option>
+                <option label="North-Dakota" value="ND" required>North Dakota</option>
+                <option label="Ohio" value="OH" required>Ohio</option>
+                <option label="Ohlahoma" value="OK" required>Ohlahoma</option>
+                <option label="Oregon" value="OR" required>Oregon</option>
+                <option label="Pennsylvania" value="PA" required>Pennsylvania</option>
+                <option label="Rhode-Island" value="RI" required>Rhode Island</option>
+                <option label="South-Carolina" value="SC" required>South Carolina</option>
+                <option label="South-Dakota" value="SD" required>South Dakota</option>
+                <option label="Tennessee" value="TN" required>Tennessee</option>
+                <option label="Texas" value="TX" required>Texas</option>
+                <option label="Utah" value="UT" required>Utah</option>
+                <option label="Vermont" value="VT" required>Vermont</option>
+                <option label="Virginia" value="VA" required>Virginia</option>
+                <option label="Washington" value="WA" required>Washington</option>
+                <option label="Washington D.C." value="DC" required>Washington D.C.</option>
+                <option label="West-Virginia" value="WV" required>West Virginia</option>
+                <option label="Wisconsin" value="WI" required>Wisconsin</option>
+                <option label="Wyoming" value="WY" required>Wyoming</option>
+              </select>
+              <select name="City" class="js-city">
+              </select>
+            </fieldset>
+          
+            <fieldset class="js-keyword-search">
+              <legend>Keyword</legend>
+              <label for='music-genre'>Music Genre / Name of Performer:</label>
+                <input type="text" name="music-genre" class="js-genre">
+            </fieldset>
+
+            <button type="submit" name="submit-button" class="submit">Search</button> 
+
+          </form>
+
+          <h2 id="h2">Results</h2>
+          <div class="js-search-results">
+          </div>
+
+      </main>
+      
+      <script src="index.js"></script>
+    </body>
+</html>
